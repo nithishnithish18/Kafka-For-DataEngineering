@@ -38,7 +38,7 @@ public class ProducerDemoKeys {
         {
             for (int i = 0; i < 10; i++) {
 
-                String topic = "demo_topic";
+                String topic = "demo_java_topic";
                 String key = "id_" + i;
                 String value = "Hello from java client " + i;
 

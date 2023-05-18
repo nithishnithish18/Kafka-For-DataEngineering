@@ -22,8 +22,8 @@ public class ConsumerDemoWithShutdown {
 
         log.info("I am kafka consumer!");
 
-        String groupId = "my-java-application";
-        String topic = "demo_topic";
+        String groupId = "my-java-application_1";
+        String topic = "demo_java_topic";
 
         // create Producer Properties
         Properties properties = new Properties();
@@ -67,7 +67,6 @@ public class ConsumerDemoWithShutdown {
             consumer.subscribe(Arrays.asList(topic));
             //poll for data
             while (true){
-                log.info("Polling record");
                 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
 
                 for (ConsumerRecord<String, String> record : records) {

@@ -24,8 +24,8 @@ public class ConsumerDemo {
 
         log.info("I'm Kafka Consumer");
 
-        String topic = "demo_topic";
-        String groupId = "my-java-application";
+        String topic = "demo_java_topic";
+        String groupId = "my-java-application_1";
 
         //create properties
         Properties properties = new Properties();
